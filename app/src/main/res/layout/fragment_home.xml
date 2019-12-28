@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        //table column
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            //first row
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                //first col
+                <LinearLayout
+                    android:id="@+id/phy_health_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/semibold"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/physical_health"
+                        android:textColor="@color/black1"
+                        android:textSize="25sp" />
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/physical_health_frag"
+                        android:padding="15dp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:elevation="0dp" />
+                //second col
+                <LinearLayout
+                    android:id="@+id/medical_adherence_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/medic_adhere"
+                        android:fontFamily="@font/semibold"
+                        android:textColor="@color/black1"
+                        android:textSize="25sp" />
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/medical_adh_frag"
+                        android:padding="15dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/daily_routine_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/daily_routine"
+                        android:fontFamily="@font/semibold"
+                        android:textColor="@color/black1"
+                        android:textSize="25sp" />
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/alarm_clock_frag"
+                        android:padding="15dp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@color/colorPrimaryDark"
+                    android:elevation="0dp" />
+
+                <LinearLayout
+                    android:id="@+id/psycho_edu_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/psycho_education"
+                        android:fontFamily="@font/semibold"
+                        android:textColor="@color/black1"
+                        android:textSize="25sp" />
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/psycho_edu_frag"
+                        android:padding="15dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/injection_schedule_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/title_activity_injection_schedule"
+                        android:fontFamily="@font/semibold"
+                        android:textColor="@color/black1"
+                        android:textSize="25sp" />
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/injection_frag"
+                        android:padding="15dp"
+                        android:scaleType="centerInside" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@color/colorPrimaryDark"
+                    android:elevation="0dp" />
+
+                <LinearLayout
+                    android:id="@+id/libray_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/library"
+                        android:fontFamily="@font/semibold"
+                        android:textColor="@color/black1"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/library_frag"
+                        android:padding="15dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/diet_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/diet"
+                    android:fontFamily="@font/semibold"
+                    android:textColor="@color/black1"
+                    android:textSize="25sp" />
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/eating_frag"
+                    android:padding="15dp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="0dp" />
+
+            <LinearLayout
+                android:id="@+id/iadl_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/title_iadl"
+                    android:fontFamily="@font/semibold"
+                    android:textColor="@color/black1"
+                    android:textSize="25sp" />
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/reliance_frag"
+                    android:padding="15dp" />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

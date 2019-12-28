@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.zuccessful.trueharmony.utilities.VerticalViewPager
+        android:id="@+id/verticalViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/left_nav"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical|start"
+        android:src="@drawable/ic_previous"
+        android:visibility="gone"
+        android:background="@null" />
+
+    <ImageButton
+        android:id="@+id/right_nav"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical|end"
+        android:fadingEdge="horizontal"
+        android:src="@drawable/ic_next"
+        android:background="@null" />
+
+</FrameLayout>

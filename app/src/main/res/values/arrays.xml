@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="bath">Bath</string>
+    <string name="walk">Walk</string>
+    <string name="wake">Wake Up</string>
+    <string name="sleep">Sleep</string>
+    <string name="meal">Meals</string>
+    <string name="brush">Brush</string>
+
+
+    <string-array name="daily_tasks">
+        <item>@string/wake</item>
+        <item>@string/brush</item>
+        <item>@string/bath</item>
+        <item>@string/meal</item>
+        <item>@string/sleep</item>
+        <item>@string/walk</item>
+    </string-array>
+    <string-array name="medicineList">
+        <item>"RISPERIDONE"</item>
+        <item>"OLANZAPINE"</item>
+        <item>"HALOPERIDOL"</item>
+        <item>"TRIFLUOPERAZINE"</item>
+        <item>"AMISULPRIDE"</item>
+        <item>"ARIPIPRAZOLE"</item>
+        <item>"QUETIAPINE"</item>
+        <item>"CLOZAPINE"</item>
+        <item>"ZIPRASIDONE"</item>
+        <item>"CHLORPROMAZINE"</item>
+
+
+    </string-array>
+
+    <string-array name="injectionList">
+        <item>"Fluphenazine decanoate"</item>
+        <item>"Fluanxol decanoate"</item>
+        <item>"Haloperidol decanoate"</item>
+        <item>"Olanzepine Pamoate"</item>
+        <item>"Risperidone LAI"</item>
+        <item>"Palliperidine"</item>
+    </string-array>
+
+    <string-array name="schedule">
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Fortnight</item>
+        <item>Once in 3 weeks</item>
+    </string-array>
+
+</resources>

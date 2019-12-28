@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.wajahatkarim3.LongImageCamera:LongImageCamera:1.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/85d6dd37c9ca2f529b3e7bcf0057fff8/LongImageCamera-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/85d6dd37c9ca2f529b3e7bcf0057fff8/LongImageCamera-1.0.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.wajahatkarim3.LongImageCamera/LongImageCamera/1.0.2/53ef9ed83014522ebcc05b84fb0edd1b26961ff0/LongImageCamera-1.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.wajahatkarim3.LongImageCamera/LongImageCamera/1.0.2/d3d68fc54237aad2ef6ff900d015735a8c6bdaaa/LongImageCamera-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

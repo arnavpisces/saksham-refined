@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.UserProfileActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_card_margin"
+                android:layout_marginBottom="@dimen/profile_card_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/profile_card_padding">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/default_content_padding">
+
+                        <TextView
+                            android:textColor="#e77728"
+                            android:id="@+id/title_user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/user_name"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <EditText
+                            android:id="@+id/about_me"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/name_hint" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_card_margin"
+                android:layout_marginBottom="@dimen/profile_card_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/profile_card_padding">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/default_content_padding">
+
+                        <TextView
+                            android:textColor="#e77728"
+                            android:id="@+id/title_height"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/height"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <EditText
+                            android:id="@+id/user_height"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/height_hint"
+                            android:inputType="number|numberDecimal" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_card_margin"
+                android:layout_marginBottom="@dimen/profile_card_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/profile_card_padding">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/default_content_padding">
+
+                        <TextView
+                            android:textColor="#e77728"
+                            android:id="@+id/title_user_weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/weight"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <EditText
+                            android:id="@+id/user_weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/weight_hint"
+                            android:inputType="number|numberDecimal" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_card_margin"
+                android:layout_marginBottom="@dimen/profile_card_margin"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/profile_card_padding">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/default_content_padding">
+
+                        <TextView
+                            android:textColor="#e77728"
+                            android:id="@+id/title_language_preference"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/language_pref_prompt"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.zuccessful.trueharmony.utilities.CustomSpinner
+                            android:id="@+id/language_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/language_arrays"
+                            android:prompt="@string/language_pref_prompt" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_card_margin"
+                android:layout_marginBottom="@dimen/profile_card_margin"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/profile_card_padding">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/default_content_padding">
+
+                        <TextView
+                            android:textColor="#e77728"
+                            android:id="@+id/title_alarm_preference"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/alarm_pref_prompt"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.zuccessful.trueharmony.utilities.CustomSpinner
+                            android:id="@+id/alrm_pref_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/alarm_pref_arrays"
+                            android:prompt="@string/alarm_pref_prompt" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_card_margin"
+                android:layout_marginBottom="@dimen/profile_card_margin"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/phy_act_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/profile_card_padding">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/default_content_padding">
+
+                        <TextView
+                            android:textColor="#e77728"
+                            android:id="@+id/title_physical_activity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/physical_activities"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/add_physical_activity_button"
+                            style="@style/Widget.AppCompat.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_alignRight="@+id/title_physical_activity"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/colorPrimary"
+                            android:padding="3dp"
+                            android:src="@android:drawable/ic_input_add"
+                            android:text="@string/add_activity"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="12sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <Spinner
+                            android:visibility="gone"
+                            android:id="@+id/phy_act_pref_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/phy_act_pref_arrays"
+                            android:prompt="@string/phy_act_pref_prompt" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_card_margin"
+                android:layout_marginBottom="@dimen/profile_card_margin"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/leisure_act_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/profile_card_padding">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/default_content_padding">
+
+                        <TextView
+                            android:textColor="#e77728"
+                            android:id="@+id/title_leisure_activity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/leisure_activities"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/add_leisure_activity_button"
+                            style="@style/Widget.AppCompat.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_alignRight="@+id/title_leisure_activity"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/colorPrimary"
+                            android:padding="3dp"
+                            android:src="@android:drawable/ic_input_add"
+                            android:text="@string/add_activity"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <Spinner
+                            android:visibility="gone"
+                            android:id="@+id/leisure_activity_pref_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/leisure_activity_pref_arrays"
+                            android:prompt="@string/leisure_activityt_pref_prompt" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="@dimen/profile_card_margin">
+
+                <LinearLayout
+                    android:id="@+id/meal_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/profile_card_padding">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/default_content_padding">
+
+                        <TextView
+                            android:textColor="#e77728"
+                            android:id="@+id/title_meals"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/meal"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/add_more_button"
+                            style="@style/Widget.AppCompat.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_alignRight="@+id/title_meals"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/colorPrimary"
+                            android:padding="3dp"
+                            android:src="@android:drawable/ic_input_add"
+                            android:text="@string/add_more_meals"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <Spinner
+                            android:visibility="gone"
+                            android:id="@+id/meal_pref_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/meals_pref_arrays"
+                            android:prompt="@string/meals_pref_prompt" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="@dimen/profile_card_margin">
+
+
+                <RelativeLayout
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#e77728"
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/log_out"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/logout"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

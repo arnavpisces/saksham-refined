@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "208505637565",
+    "firebase_url": "https://trueharmony-iiitd.firebaseio.com",
+    "project_id": "trueharmony-iiitd",
+    "storage_bucket": "trueharmony-iiitd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208505637565:android:84389a1ae018ae14",
+        "android_client_info": {
+          "package_name": "com.zuccessful.trueharmony"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208505637565-crlogmdq9o05mc31qinuhu7tsq05aeic.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zuccessful.trueharmony",
+            "certificate_hash": "a657667d411d9ecccefdcb8aaa988a9347d695e2"
+          }
+        },
+        {
+          "client_id": "208505637565-n4ckmpmd1qhvq41le49agu2f6gj6lf93.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "208505637565-n4ckmpmd1qhvq41le49agu2f6gj6lf93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLJ9VRaw5U_XjAzT9F-w5ojNGAz0Vmt1Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208505637565-n4ckmpmd1qhvq41le49agu2f6gj6lf93.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

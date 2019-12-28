@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/common_tests_label"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+        <android.support.v7.widget.CardView
+            android:visibility="visible"
+            android:id="@+id/common_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/height"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <EditText
+                        android:id="@+id/height_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="@string/enter_value_hint"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/height_unit" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/weight"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <EditText
+                        android:id="@+id/weight_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="@string/enter_value_hint"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/weight_unit" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:visibility="gone"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bmi_tv"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/waist"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <EditText
+                        android:id="@+id/waist_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="@string/enter_value_hint"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/waist_unit" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/blood_pressure"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <EditText
+                        android:id="@+id/bp_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="@string/enter_value_hint"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/bp_unit" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:visibility="gone"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bp_msg_tv"/>
+
+
+                <Button
+                    android:id="@+id/submit_common_values"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginTop="16dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/submit" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/blood_tests_label"
+            android:layout_marginLeft="8dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp">
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/lipid_profile"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <EditText
+                    android:id="@+id/lipid_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="@string/enter_value_hint"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="@string/height_unit" />
+
+            </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:visibility="gone"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lipid_msg_tv"/>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/tsh_profile"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <EditText
+                    android:id="@+id/tsh_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="@string/enter_value_hint"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="@string/height_unit" />
+
+            </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:visibility="gone"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tsh_msg_tv"/>
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/blood_sugar_profile"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <EditText
+                        android:id="@+id/blood_sugar_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="@string/enter_value_hint"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:text="@string/height_unit" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:visibility="gone"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/blood_sugar_msg_tv"/>
+
+
+                <Button
+                    android:id="@+id/button_submit_blood_test"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginTop="16dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/submit" />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/other_tests_label"
+            android:visibility="gone"
+            android:layout_marginLeft="8dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+        <android.support.v7.widget.CardView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="2">
+
+            <ProgressBar
+                android:id="@+id/other_test_load_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:id="@+id/test_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/test_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:prompt="@string/test_prompt" />
+
+                    <EditText
+                        android:id="@+id/test_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="@string/enter_value_hint"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:id="@+id/test_unit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/units_placeholder" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit_other_value"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/submit" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/profile_card_margin"
+            android:layout_marginBottom="@dimen/profile_card_margin"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/phy_act_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/profile_card_padding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_content_padding">
+
+                    <TextView
+                        android:id="@+id/title_reports"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/reports"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/add_reports_button"
+                        style="@style/Widget.AppCompat.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignRight="@+id/title_reports"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:padding="3dp"
+                        android:src="@android:drawable/ic_input_add"
+                        android:text="@string/add_report"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <Spinner
+                        android:visibility="gone"
+                        android:id="@+id/phy_act_pref_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/phy_act_pref_arrays"
+                        android:prompt="@string/phy_act_pref_prompt" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>

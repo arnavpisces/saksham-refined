@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/physical_activity_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/physical_activities" />
+
+
+ <!--   <ImageView
+        android:id="@+id/delete_physical_activity_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignRight="@+id/title_physical_activity"
+        android:layout_alignParentRight="true"
+        android:padding="3dp"
+        android:src="@android:drawable/ic_menu_delete"
+        android:text="@string/add_activity"
+        android:textSize="12sp" />
+-->
+
+</RelativeLayout>

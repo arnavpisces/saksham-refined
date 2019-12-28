@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">सक्षम</string>
+
+    <string name="bath">स्नान</string>
+    <string name="walk">पैदल चलना</string>
+    <string name="wake">जगाना</string>
+    <string name="sleep">नींद</string>
+    <string name="meal">भोजन</string>
+    <string name="brush">ब्रश</string>
+    <string name="select_days">सप्ताह का दिन चुनें</string>
+    <string name="select_med">दवा चुनें</string>
+    <string name="med_times">दिन मे कितने बार?</string>
+    <string name="repeat">दोहराना</string>
+
+
+    <string name="navigation_drawer_open">नेविगेशन दराज खुला</string>
+    <string name="navigation_drawer_close">नेविगेशन दराज बंद</string>
+    <string name="nav_header_title">एंड्रॉयड स्टूडियो</string>
+    <string name="nav_header_subtitle">एंड्रॉयड स्टूडियो</string>
+    <string name="nav_header_desc">नेविगेशन हैडर</string>
+    <string name="action_settings">सेटिंग्स</string>
+
+    <string name="title_iadl">आत्म निर्भरता</string>
+    <string name="summary">सारांश</string>
+    <string name="diet">अच्छा खायें </string>
+    <string name="hello_blank_fragment">नमस्ते</string>
+    <string name="want_alarm">अलार्म</string>
+    <string name="last_date"></string>
+    <string name="name">नाम:</string>
+    <string name="placeholder">प्लेसहोल्डर जानकारी</string>
+    <string name="title_activity_demo">डेमो</string>
+    <string name="def_med_morning">08:00</string>
+
+    <string name="medic_adhere">दवा अनुपालन</string>
+    <string name="video1">रघु परिचय</string>
+    <string name="daily_routine">दिनचर्या </string>
+    <string name="phy_health">शारीरिक स्वास्थ्य</string>
+    <string name="psycho_education">मनो शिक्षा</string>
+    <string name="library">पुस्तकालय</string>
+    <string name="title_activity_injection_schedule">इंजेक्शन अनुसूची</string>
+    <string name="physical_health">शारीरिक स्वास्थ्य</string>
+    <string name="about_app">CODESLAB द्वारा विकसित ऐप</string>
+
+
+    <string name="home">होम</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="logout">लॉग आउट</string>
+    <string name="phy_health_desc">शारीरिक स्वास्थ्य निगरानी की आवश्यकता के बारे में कुछ जानकारीपूर्ण पाठ विवरण</string>
+    <string name="health_monitoring_label">स्वास्थ्य उपाय</string>
+    <string name="enter_value_hint">मूल्य दर्ज करें</string>
+    <string name="units_placeholder">इकाई</string>
+    <string name="skip_text">छोड़ें</string>
+    <string name="submit_text">जमा करें</string>
+
+    <string-array name="phy_act_pref_arrays">
+        <item>सैर करना </item>
+        <item>भागना</item>
+        <item>खेलना</item>
+        <item>साइकिल चलाना</item>
+        <item>तैरना</item>
+        <item>व्यायाम</item>
+        <item>@string/other</item>
+    </string-array>
+
+    <string-array name="leisure_activity_pref_arrays">
+        <item>सैर करना</item>
+        <item>सोना</item>
+        <item>खाना</item>
+        <item>खेलना</item>
+        <item>@string/other</item>
+    </string-array>
+
+    <string name="title_home">@string/home</string>
+    <string name="title_dashboard">जानकारी</string>
+    <string name="title_notifications">प्रगति</string>
+    <string name="title_activity_health_monitor_tabbed">स्वास्थ्य मॉनिटर</string>
+    <string name="submit">@string/submit_text</string>
+    <string name="height_unit">से. मी</string>
+    <string name="weight_unit">किलोग्राम</string>
+    <string name="weight">वजन</string>
+    <string name="height">कद</string>
+    <string name="test_prompt">एक परीक्षा चुनें</string>
+    <string name="other_tests_label">अन्य टेस्ट</string>
+    <string name="common_tests_label">आम टेस्ट</string>
+    <string name="title_activity_medical_adherence">दवा अनुपालन</string>
+
+
+    <string name="waist">कमर की चौड़ाई </string>
+    <string name="waist_unit">से मी</string>
+    <string name="bmi">बी. एम् .आई</string>
+    <string name="valid_value">मान्य मान दर्ज करें</string>
+    <string name="bmi_low">आपका बीएमआई सामान्य से कम है।</string>
+    <string name="bmi_high">आपका बीएमआई सामान्य से अधिक है।</string>
+    <string name="pick_report">रिपोर्ट प्रकार चुनें</string>
+    <string name="bp_low">आपका बी पी सामान्य से कम है।</string>
+    <string name="bp_high">आपका बी पी सामान्य से अधिक है।</string>
+    <string name="bp_normal">आपका बी पी सामान्य है।</string>
+
+    <string name="tsh_low">आपका थाइरोइड सामान्य से कम है।</string>
+    <string name="tsh_high">आपका थाइरोइड सामान्य से अधिक है।</string>
+    <string name="tsh_normal">आपका थाइरोइड सामान्य है।</string>
+
+
+    <string name="lipid_low">आपका सीरम कॉलेस्ट्रॉल सामान्य से कम है।</string>
+    <string name="lipid_high">आपका सीरम कॉलेस्ट्रॉल सामान्य से अधिक है।</string>
+    <string name="lipid_normal">आपका सीरम कॉलेस्ट्रॉल सामान्य है।</string>
+
+    <string name="sugar_low">आपका उपवास शुगर  सामान्य से कम है।</string>
+    <string name="sugar_high">आपका उपवास शुगर  सामान्य से अधिक है।</string>
+    <string name="sugar_normal">आपका उपवास शुगर  सामान्य है।</string>
+
+    <string name="blood_pressure">बी पी </string>
+    <string name="bp_unit">जैसे 80/120</string>
+    <string name="blood_tests_label">रक्त परीक्षण</string>
+    <string name="lipid_profile">सीरम कोलेस्ट्रॉल </string>
+    <string name="tsh_profile">टी एस एच </string>
+    <string name="blood_sugar_profile">ब्लड शुगर</string>
+    <string name="reports">रिपोर्ट</string>
+    <string name="add_report">रिपोर्ट जोड़ें</string>
+
+
+
+
+    <string name="add_medicine_information">दवा की जानकारी जोड़ें</string>
+    <string name="add_injection_information">इंजेक्शन जानकारी जोड़ें</string>
+    <string name="blank_inj_record_text">कोई इंजेक्शन रिकॉर्ड नहीं! इंजेक्शन जानकारी जोड़ने के लिए उपरोक्त + बटन पर क्लिक करें</string>
+    <string name="blank_med_record_text">कोई दवा रिकॉर्ड नहीं! दवा की जानकारी जोड़ने के लिए उपरोक्त + बटन पर क्लिक करें!</string>
+    <string name="medicine_name">चिकित्सा का चयन करें</string>
+    <string name="injection_name">इंजेक्शन का चयन करें</string>
+    <string name="med_desc">लघु चिकित्सा विवरण (वैकल्पिक)</string>
+    <string name="inj_desc">लघु इंजेक्शन विवरण (वैकल्पिक)</string>
+    <string name="med_field_error">दवा का नाम दर्ज करें</string>
+    <string name="inj_field_error">इंजेक्शन का नाम दर्ज करें</string>
+    <string name="done">किया हुआ</string>
+    <string name="injection_schedule">इंजेक्शन अनुसूची</string>
+    <string name="select_daily_tasks">दैनिक कार्यों का चयन करें</string>
+    <string name="blank_daily_rout_record_text">कोई दैनिक दिनचर्या कार्य रिकॉर्ड नहीं! दैनिक कार्य जानकारी जोड़ने के लिए उपरोक्त + बटन पर क्लिक करें!</string>
+    <string name="psycho_edu_ques">मनोविज्ञान प्रश्न</string>
+    <string name="team_saksham">टीम सषम</string>
+
+
+    <string name="title_activity_about_me">एप्लिकेशन के बारे में</string>
+    <string name="medicine_taken_message">अच्छा काम!</string>
+    <string name="injection_taken_message">अच्छा काम!</string>
+    <string name="medicine_missed_message">यह महत्वपूर्ण है कि आप हर दिन दवा लेते हैं। यह आपकी वसूली के लिए महत्वपूर्ण है।
+        यदि आप अपने परिवार के सदस्य के साथ कोई समस्या है तो आप चर्चा कर सकते हैं</string>
+    <string name="injection_missed_message">यह महत्वपूर्ण है कि आप हर दिन इंजेक्शन लें। यह आपकी वसूली के लिए महत्वपूर्ण है।
+    यदि आप अपने परिवार के सदस्य के साथ कोई समस्या है तो आप चर्चा कर सकते हैं</string>
+    <string name="medicine_reminder">चिकित्सा अनुस्मारक</string>
+    <string name="injection_reminder">इंजेक्शन अनुस्मारक</string>
+    <string name="user_name">नाम</string>
+    <string name="name_hint">यहां नाम दर्ज करें</string>
+    <string name="height_hint">यहां ऊंचाई दर्ज करें (सेमी में)</string>
+    <string name="weight_hint">यहां वजन दर्ज करें (किलो में)</string>
+    <string name="alarm_pref_prompt">अलार्म चुनें</string>
+    <string name="language_pref_prompt">भाषा चुनें</string>
+    <string name="physical_activities">शारीरिक व्यायाम</string>
+    <string name="phy_act_pref_prompt">अपनी गतिविधियां चुनें</string>
+    <string name="leisure_activities">रुचियाँ</string>
+    <string name="leisure_activityt_pref_prompt">अवकाश सक्रियण का चयन करें</string>
+    <string name="breakfast">सुबह का नाश्ता</string>
+    <string name="user_profile">उपयोगकर्ता प्रोफ़ाइल</string>
+    <string name="internet_connectivity">अधिक जानकारी के लिए इंटरनेट से कनेक्ट करें</string>
+    <string name="select_inj">इंजेक्शन चुनें</string>
+    <string name="what_eat">आपने क्या लिया</string>
+    <string name="select_lastday">पिछले दिन चुनें</string>
+    <string name="set_date">तारीख सेट करें</string>
+    <string name="add_time">समय जोड़ें</string>
+    <string name="lunch">दोपहर का भोजन</string>
+    <string name="dinner">रात का खाना</string>
+    <string name="add_more_meals">अधिक भोजन जोड़ें</string>
+    <string name="save">सेव करें </string>
+    <string name="add_activity">गतिविधि जोड़ें</string>
+    <string name="other">अन्य</string>
+    <string name="enter_activity_name">गतिविधि का नाम दर्ज करें</string>
+    <string name="ok">ठीक</string>
+    <string name="cancel">रद्द करना</string>
+    <string name="activity_already_added">गतिविधि पहले से ही जोड़ा गया है!</string>
+    <string name="ringtone">रिंगटोन</string>
+    <string name="pledge">प्रतिज्ञा</string>
+    <string name="enter_meal_name">भोजन का नाम</string>
+    <string name="description">विवरण</string>
+    <string name="title">शीर्षक</string>
+    <string name="meals_pref_prompt">भोजन का प्रकार चुनें</string>
+
+    <string-array name="alarm_pref_arrays">
+        <item>रिंगटोन</item>
+        <item>केवल टेक्स्ट</item>
+    </string-array>
+
+
+    <string-array name="meals_pref_arrays">
+        <item>स्नैक्स</item>
+        <item>@string/other</item>
+    </string-array>
+
+
+
+    <string-array name="med_adh_que">
+        <item>चिकित्सक द्वारा बताये गए तरीके से दवा  के अनुपालन (अडेहरैन्स) में सहायता दवा अनुपालन क्या है?</item>
+        <item>चिकित्सक द्वारा बताये गए तरीके से दवा  के अनुपालन (अडेहरैन्स) में सहायता दवा अनुपालन क्या है?</item>
+        <item>चिकित्सक द्वारा बताये गए तरीके से दवा  के अनुपालन (अडेहरैन्स) में सहायता दवा अनुपालन क्या है?</item>
+
+        <item>आपको दवा अनुपालन की आवश्यकता क्यों है ?</item>
+        <item>आपको दवा अनुपालन की आवश्यकता क्यों है ?</item>
+        <item>आपको दवा अनुपालन की आवश्यकता क्यों है ?</item>
+
+        <item>दवा अनुपालन के क्या लाभ हैं?</item>
+        <item>दवा अनुपालन के क्या लाभ हैं?</item>
+        <item>दवा अनुपालन के क्या लाभ हैं?</item>
+        <item>दवा अनुपालन के क्या लाभ हैं?</item>
+        <item>दवा अनुपालन के क्या लाभ हैं?</item>
+        <item>दवा अनुपालन के क्या लाभ हैं?</item>
+        <item>दवा अनुपालन के क्या लाभ हैं?</item>
+
+        <item>अनियमित दवा अनुपालन (नॉन–अडेहरैन्स) का क्या अर्थ है?</item>
+        <item>अनियमित दवा अनुपालन (नॉन–अडेहरैन्स) का क्या अर्थ है?</item>
+        <item>अनियमित दवा अनुपालन (नॉन–अडेहरैन्स) का क्या अर्थ है?</item>
+
+        <item>आपके लिए सही तरीके से दवा न लेने/खराब दवा पालन के क्या नुकसान हैं?</item>
+        <item>आपके लिए सही तरीके से दवा न लेने/खराब दवा पालन के क्या नुकसान हैं?</item>
+        <item>आपके लिए सही तरीके से दवा न लेने/खराब दवा पालन के क्या नुकसान हैं?</item>
+        <item>आपके लिए सही तरीके से दवा न लेने/खराब दवा पालन के क्या नुकसान हैं?</item>
+        <item>आपके लिए सही तरीके से दवा न लेने/खराब दवा पालन के क्या नुकसान हैं?</item>
+        <item>आपके लिए सही तरीके से दवा न लेने/खराब दवा पालन के क्या नुकसान हैं?</item>
+        <item>आपके लिए सही तरीके से दवा न लेने/खराब दवा पालन के क्या नुकसान हैं?</item>
+        <item>आपके लिए सही तरीके से दवा न लेने/खराब दवा पालन के क्या नुकसान हैं?</item>
+        <item>आपके लिए सही तरीके से दवा न लेने/खराब दवा पालन के क्या नुकसान हैं?</item>
+
+        <item>लोग सही तरीके से दवा क्यों नहीं ले पाते हैं?</item>
+        <item>लोग सही तरीके से दवा क्यों नहीं ले पाते हैं?</item>
+        <item>लोग सही तरीके से दवा क्यों नहीं ले पाते हैं?</item>
+        <item>लोग सही तरीके से दवा क्यों नहीं ले पाते हैं?</item>
+
+        <item>दवा पालन में सुधार के तरीके </item>
+        <item>दवा पालन में सुधार के तरीके </item>
+        <item>दवा पालन में सुधार के तरीके </item>
+        <item>दवा पालन में सुधार के तरीके </item>
+    </string-array>
+
+
+
+
+
+    <string-array name="med_adh_ans">
+        <item>
+            <li>1. अपने चिकित्सक के द्वारा बताई गयी दवाइयों को नियमित रूप से लेना।</li>\n
+        </item>
+        <item>
+            <li>2. सही समय, सही खुराक और सही अंतराल पर दवा लेना।</li>\n
+	</item>
+        <item>
+            <li>3. बीच में खुराक नहीं छोड़ना।</li>\n
+	</item>
+
+
+
+        <item>
+            <li>1. आपकी बीमारी डायबिटीज, उच्च रक्तचाप आदि जैसी किसी भी लम्बे समय तक रहने वाली शारीरिक बीमारी की तरह ही है।</li>\n
+        </item>
+        <item>
+            <li>2. किसी भी लम्बे समय तक रहने वाली शारीरिक या मानसिक बीमारी के लिए काफी  समय तक दवा लेना आवश्यक होता है। दवा आपको अपने डॉक्टर के सलाह के अनुसार  लेनी होती है। </li>\n
+        </item>
+        <item>
+            <li>3. नियमित रूप से दवा लेने से बीमारी के लक्षणों में सुधार होता है। </li>\n
+        </item>
+
+
+
+        <item>
+            <li>1. यह आपके बीमारी के लक्षणों को नियंत्रित करता है।</li>\n
+        </item>
+        <item>
+            <li>2. यह आपके पुनः बीमार होने या पुनः अस्पताल में भर्ती होने के खतरे को कम करता है।</li>\n
+        </item>
+        <item>
+            <li>3. इससे आप बेहतर और सहज महसूस करते हैं।</li>\n
+        </item>
+        <item>
+            <li>4. यह आपको अपनी पारिवारिक जिम्मेदारियों को निभाने में सहायता करता है।</li>\n
+        </item>
+        <item>
+            <li>5. यह दूसरों के साथ आपके अच्छे सम्बन्ध बनाये रखने में भी सहायता करता है।</li>\n
+        </item>
+        <item>
+            <li>6. आपको अपनी नौकरी और अन्य काम करने में मदद करता है।</li>\n
+        </item>
+
+
+        <item>
+            <li>1. समय पर दवा नहीं लेना।</li>\n
+        </item>
+        <item>
+            <li>2. आपके डॉक्टर द्वारा बताये गए निश्चित अंतराल पर दवा नहीं लेना जैसे - दिन में तीन बार या दिन में दो बार।</li>\n
+	</item>
+        <item>
+            <li>3. दवा की सही खुराक नहीं लेना जैसे- एक टैबलेट या आधा टैबलेट लेना।</li>\n
+        </item>
+
+
+        <item>
+            <li>1. बीमारी के लक्षणों में कोई सुधार न होना।</li>\n
+        </item>
+        <item>
+            <li>2. समय के साथ बीमारी के लक्षणों का और बढ़ते जाना। </li>\n
+        </item>
+        <item>
+            <li>3. पहले ठीक हुए बीमारी के लक्षणों का फिर से आ जाना।</li>\n
+        </item>
+        <item>
+            <li>4. अस्पताल में भर्ती होने की संभावना का बढ़ जाना।</li>\n
+        </item>
+        <item>
+            <li>5. अपने  दैनिक जीवन के कार्यों को ठीक तरीके से न कर पाना। </li>\n
+        </item>
+        <item>
+            <li>6. अपने मित्रों और परिवार के सदस्यों के साथ सही तरीके से बातचीत न कर पाना।</li>\n
+        </item>
+        <item>
+            <li>7. परिवार के सदस्यों के साथ अक्सर बहस।</li>\n
+        </item>
+        <item>
+            <li>8. नौकरी न कर पाना या नौकरी का छूट जाना। </li>\n
+        </item>
+
+
+
+        <item>
+	यह देखा  गया है कि करीब आधे मरीज़ नियमित रूप से अपनी दवा नहीं लेते हैं। मरीज़ अक्सर जानबूझकर या अनजाने में दवा काम कर देते या छोड़ देते हैं।  जानबूझकर दवाएं छोड़ने या बंद करने का निर्णय:
+
+		<li>अनजाने बाधाएं--\n
+			<li>1. रोगी को पता नहीं होता कि दवा किस समय या कितना या किस तरह से लेना है।</li>\n
+			<li>\n 2. दवा लेना भूल जाना।</li>\n
+			<li>\n 3. समय पर डॉक्टर के पास या अस्पताल न जाना।</li>\n
+			<li>\n 4. समय पर दवा न खरीदना। </li>\n
+		</li>\n
+		<li>जानबूझकर दवाएं छोड़ने या बंद करने का निर्णय: -- \n
+			<li>1. दवाएं न खरीद पाने के कई कारण हो सकते हैं जैसे - दवा खरीदने के लिए पैसे न होना या दवा के बारे में जानकारी का अभाव।</li>\n
+			<li>\n 2. मरीज दवाओं के साइड-इफ़ेक्टस से परेशान हो जाते हैं।</li>\n
+			<li>\n 3. ऐसा देखा गया है कि मरीज़ो को दवा के बारे  में कुछ गलत धारणाएं होती हैं जिसकी वजह से वह दवा बंद कर देते हैं।</li>\n
+		</li>\n
+	</item>
+
+        <item>
+		<li>मिथक:
+			<li>दवाओं से नशे की लत लग जाएगी। और मरीज दवाओं पर निर्भर ((डिपेंडेंट) हो जाएंगे। </li>\n
+		</li>\n
+		<li>तथ्य: \n
+			<li>1. इन दवाओं से नशे की लत नहीं लगती। इसके लिए दवा की  खुराक बढ़ाने या घटाने के लिए अपने डॉक्टर के सलाह का सही से पालन करें।</li>\n
+ 			<li>\n 2. दवा की  खुराक बढ़ाने या घटाने से सम्बंधित कोई भी बात समझ न आये तो अपने डॉक्टर से पूछ सकते हैं।</li>\n
+		</li>\n
+        </item>
+
+        <item>
+		<li>मिथक:
+			<li>लम्बे समय तक दवा लेते रहना स्वास्थ्य के लिए  हानिकारक है।</li>\n
+		</li>\n
+		<li>तथ्य: \n
+			<li>1. डॉक्टर के सलाह के अनुसार लम्बे समय तक दवा लेते रहना सुरक्षित है। वे बीमारी के लक्षणों के सुधार में मदद करती हैं। </li>\n
+			<li>\n 2. दवाओं के कुछ  साइड इफेक्ट्स हो सकते हैं, लेकिन आपके डॉक्टर इन्हें विभिन्न तरीकों जैसे- दवाओं में परिवर्तन करके या दवाओं की खुराक में परिवर्तन करके ठीक कर सकते हैं। </li>\n
+		</li>\n
+        </item>
+
+        <item>
+		<li>मिथक:
+			<li>दवाएं मुझे बेहतर महसूस करने में मदद नहीं कर रही है।</li>\n
+		</li>\n
+		<li>तथ्य: \n
+			<li>1. दवा का असर दिखने में कभी कभी अधिक समय लग जाता है। इनका पूरा प्रभाव आने के लिए इन्हें नियमित रूप से लिया जाना आवश्यक है। </li>\n
+			<li>\n 2. स्किज़ोफ्रेनिया के लिए दवाएं लम्बें समय तक चलता हैं। नियमित रूप से दवा लेने से बीमारी के लक्षणों में सुधार होता है और मरीज अपने दैनिक कार्यों को भी कर पाता है।</li>\n
+		</li>\n
+        </item>
+
+
+
+
+        <item>
+		<li>1. अपने डॉक्टर द्वारा लिखी गयी दवाओं के नाम अच्छी तरह से समझ लें। दवाओं को समझने में कोई दिक्कत हो तो डॉक्टर से दुबारा पूछ ले। (सुझाव: जरुरत होने पर अपने डॉक्टर से अनुरोध करें कि दवाओं के नाम बड़े अक्षरों में लिखें।)</li>\n
+		<li>\n 2. दवा लेने के सही समय और खुराक के बारे में अपने डॉक्टर से स्पष्ट रूप से समझ लें। (सुझाव: आवश्यक होने पर डॉक्टर से सरल भाषा में लिखित निर्देश के लिए अनुरोध करें।)</li>\n
+		<li>\n 3. दवाओं से होने वाले सामान्य साइड-इफ़ेक्टस के बारे में अपने डॉक्टर से जान लें। उनसे यह भी पूछे कि ऐसा होता है तो क्या करना है।</li>\n
+        </item>
+
+        <item>
+		<li>1. यदि आपको दवा से कुछ ऐसे साइड-इफ़ेक्टस होते है जिससे आपको परेशानी हो रही हो। ऐसे में तुरंत दवाओं को रोकने के बजाय जितनी जल्दी हो सके अपने डॉक्टर से मिलें। इन साइड-इफ़ेक्टस से निपटने के लिए अक्सर कुछ उपाय होते हैं।</li>\n
+		<li>\n 2. दवा लेने का एक समय तय करें। (सुझाव: इसे दैनिक गतिविधियों के साथ जोड़ें, जैसे-भोजन के समय के साथ दवा ले।)</li>\n
+		<li>\n 3. दवा लेने के समय अपनी घड़ी या मोबाइल में अलार्म सेट कर सकते हैं। </li>\n
+        </item>
+
+        <item>
+		<li>1. दवा को याद दिलाने के लिए अपने परिवार के सदस्यों की सहायता लें।</li>\n
+		<li>\n 2. यह सुनिश्चित करें कि आपके पास पर्याप्त मात्रा में दवा हो। पूरी दवा खत्म होने से पहले ही दवा खरीद लें। (सुझाव: जब भी आप दवा खाएं तो यह देख लें कि आपके पास अगले  2- 3 दिन के लिए दवा हैं या नहीं, यदि न हो तो दवा खरीद के रख लें।)</li>\n
+		<li>\n 3. अपने चिकित्सक की सलाह के अनुसार नियमित रूप से जाँच के लिए आयें। </li>\n
+	</item>
+
+        <item>
+		<li>1. दवाओं की खुराक घटाए या बढ़ाये जाने पर अपने डॉक्टर से उसके बारे में अच्छे तरीके से समझ लें। अगर आपके मन में दवाओं से सम्बंधित कोई भी संदेह या प्रश्न हैं, तो बेहिचक अपने डॉक्टर से पूछें। </li>\n
+		<li>\n 2. यदि आप किसी भी वजह से डॉक्टर द्वारा बुलाये गए समय पर आने में असमर्थ हों तो उसी खुराक में दवा लेते रहें। </li>\n
+		<li>\n 3. अपने डॉक्टर से बिना पूछे कोई भी दवा अचानक बंद न करें। </li>\n
+        </item>
+
+        <item>
+		<li>1. यदि आप पैसे की कमी, आसपास दवा की दुकान न होने या किसी एक दवा के न मिलने पर, दवा न खरीद पा रहे हो तो अपने डॉक्टर को इनके बारे में बताये वह आपको इन समस्यों से निबटने में सहायता कर सकता हैं। </li>\n
+		<li>\n 2. नशे की लत वाले पदार्थो से बचें जैसे - शराब, गांजा, तम्बाकू इत्यादि।</li>\n
+        </item>
+
+    </string-array>
+    <string-array name="report_types">
+        <item>सीरम कॉलेस्ट्रॉल</item>
+        <item>उपवास शुगर </item>
+        <item>टी एस एच </item>
+        <item>अन्य</item>
+    </string-array>
+
+    <string name="others_spec">अन्य, कृपया निर्दिष्ट करें</string>
+    <string name="pick_activity">व्यायाम चुनें</string>
+
+    <string-array name="schedule">
+        <item>साप्ताहिक</item>
+        <item>महीने के</item>
+        <item>पाक्षिक</item>
+        <item>तीन सप्ताह में एक बार</item>
+    </string-array>
+    <string name="cereals">अनाज</string>
+    <string name="egg">अंडे</string>
+    <string name="fruits">फल / ताजा रस</string>
+    <string name="dryfruits">मेवे</string>
+    <string name="milk">दूध के उत्पाद</string>
+    <string name="beverage">पेय पदार्थ</string>
+    <string name="daal">दाल / बीन्स / सब्जियां</string>
+    <string name="others">अन्य</string>
+    <string name="salad">सलाद</string>
+    <string name="fish_meat">मछली या मांस</string>
+
+
+
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.InjectionFragment">
+
+    <LinearLayout
+        android:id="@+id/add_inj_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:padding="8dp"
+            android:text="+"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="@string/add_injection_information" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/blank_inj_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/blank_inj_record_text" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/inj_record_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

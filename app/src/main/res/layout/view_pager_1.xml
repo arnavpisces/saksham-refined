@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="10dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:contentPadding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:minHeight="200dp"
+                android:scaleType="centerInside"
+                card_view:srcCompat="@drawable/ic_eating_pill" />
+
+            <TextView
+                android:textColor="#e77728"
+                android:id="@+id/textViewQues"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <TextView
+                android:id="@+id/textViewAns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:justificationMode="inter_word"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="5dp"
+                android:textSize="15sp"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.v7.widget.CardView>
