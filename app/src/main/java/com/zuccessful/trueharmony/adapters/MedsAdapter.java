@@ -136,9 +136,24 @@ public class MedsAdapter extends RecyclerView.Adapter<MedsAdapter.MedsViewHolder
                             "/medication").document(mItem.getName()).delete().addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
                         public void onSuccess(Void aVoid) {
-                            Toast.makeText(SakshamApp.getInstance().getApplicationContext(),
-                                    "Deleted "
-                            +mItem.getName()+" successfully.",Toast.LENGTH_SHORT).show();
+//                            Toast.makeText(SakshamApp.getInstance().getApplicationContext(),
+//                                    "Deleted "
+//                            +mItem.getName()+" successfully.",Toast.LENGTH_SHORT).show();
+
+                            //FOR CUSTOM TOAST LAYOUT
+//                            LayoutInflater inflater = context.getLayoutInflater();
+                            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                            View layout = inflater.inflate(R.layout.toast,null);
+                            ImageView image = (ImageView) layout.findViewById(R.id.image);
+                            image.setImageResource(R.drawable.wrong_icon);
+                            TextView text = (TextView) layout.findViewById(R.id.text);
+                            String successToastText="Deleted " + mItem.getName() + ".";
+                            text.setText(successToastText);
+                            Toast toast = new Toast(context);
+//            toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+                            toast.setDuration(Toast.LENGTH_LONG);
+                            toast.setView(layout);
+                            toast.show();
                             removeMeds(mItem);
                         }
 

@@ -18,12 +18,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
@@ -56,6 +60,8 @@ import java.util.Locale;
 import java.util.Map;
 
 import ca.antonious.materialdaypicker.MaterialDayPicker;
+
+import static com.zuccessful.trueharmony.R.layout.toast;
 
 public class AddMedRecActivity extends AppCompatActivity {
     private TextInputLayout nameLayout, descLayout;
@@ -242,7 +248,7 @@ public class AddMedRecActivity extends AppCompatActivity {
     }
 
     public void submitMed(View view) {
-        progressBar.setVisibility(View.VISIBLE);
+//        progressBar.setVisibility(View.VISIBLE);
         final ArrayList<String> reminders = new ArrayList<>();
         final String name, desc;
         Map<String, Boolean> days = new HashMap<>();
@@ -254,7 +260,21 @@ public class AddMedRecActivity extends AppCompatActivity {
         desc = descEditText.getText().toString();
         List<MaterialDayPicker.Weekday> daysSelected = dayPicker.getSelectedDays();
         if (daysSelected.size() < 1) {
-            Toast.makeText(AddMedRecActivity.this, getResources().getString(R.string.select_days), Toast.LENGTH_SHORT).show();
+
+            LayoutInflater inflater = getLayoutInflater();
+            View layout = inflater.inflate(R.layout.toast,null);
+            ImageView image = (ImageView) layout.findViewById(R.id.image);
+            image.setImageResource(R.drawable.wrong_icon);
+            TextView text = (TextView) layout.findViewById(R.id.text);
+            text.setText(getResources().getString(R.string.select_days));
+            Toast toast = new Toast(getApplicationContext());
+//            toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+            toast.setDuration(Toast.LENGTH_LONG);
+            toast.setView(layout);
+            toast.show();
+
+//            Toast.makeText(AddMedRecActivity.this, getResources().getString(R.string.select_days), Toast.LENGTH_SHORT).show();
+
             return;
         }
 
@@ -372,7 +392,21 @@ public class AddMedRecActivity extends AppCompatActivity {
                         Log.d("AlarmService", "Setting alarm, Alarm Id: " + alarm_ids.get(slot * weekdays.size() + i) + " Slot: " + slot + " : weekday: " + weekdays.get(i));
                     }
                 }
-                Toast.makeText(AddMedRecActivity.this, "Medicine: " + name + " added successfully.", Toast.LENGTH_SHORT).show();
+                //FOR CUSTOM TOAST LAYOUT
+                LayoutInflater inflater = getLayoutInflater();
+                View layout = inflater.inflate(R.layout.toast,null);
+                ImageView image = (ImageView) layout.findViewById(R.id.image);
+                image.setImageResource(R.drawable.tick_icon);
+                TextView text = (TextView) layout.findViewById(R.id.text);
+                String successToastText="Medicine: " + name + " added successfully.";
+                text.setText(successToastText);
+                Toast toast = new Toast(getApplicationContext());
+//            toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+                toast.setDuration(Toast.LENGTH_LONG);
+                toast.setView(layout);
+                toast.show();
+
+//                Toast.makeText(AddMedRecActivity.this, "Medicine: " + name + " added successfully.", Toast.LENGTH_SHORT).show();
 
 
             }
@@ -418,7 +452,19 @@ public class AddMedRecActivity extends AppCompatActivity {
                                 Log.d("AlarmService", "Setting alarm, Alarm Id: " + alarm_ids.get(slot * weekdays.size() + i) + " Slot: " + slot + " : weekday: " + weekdays.get(i));
                             }
                         }
-                        Toast.makeText(AddMedRecActivity.this, "Medicine: " + name + " added successfully.", Toast.LENGTH_SHORT).show();
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout = inflater.inflate(R.layout.toast,null);
+                        ImageView image = (ImageView) layout.findViewById(R.id.image);
+                        image.setImageResource(R.drawable.tick_icon);
+                        TextView text = (TextView) layout.findViewById(R.id.text);
+                        String successToastText="Medicine: " + name + " added.";
+                        text.setText(successToastText);
+                        Toast toast = new Toast(getApplicationContext());
+//            toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+                        toast.setDuration(Toast.LENGTH_LONG);
+                        toast.setView(layout);
+                        toast.show();
+//                        Toast.makeText(AddMedRecActivity.this, "Medicine: " + name + " added successfully.", Toast.LENGTH_SHORT).show();
                     }
                 }
             }).addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -454,7 +500,19 @@ public class AddMedRecActivity extends AppCompatActivity {
                                 Log.d("AlarmService", "Setting alarm, Alarm Id: " + alarm_ids.get(slot * weekdays.size() + i) + " Slot: " + slot + " : weekday: " + weekdays.get(i));
                             }
                         }
-                        Toast.makeText(AddMedRecActivity.this, "Medicine: " + name + " added successfully.", Toast.LENGTH_SHORT).show();
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout = inflater.inflate(R.layout.toast,null);
+                        ImageView image = (ImageView) layout.findViewById(R.id.image);
+                        image.setImageResource(R.drawable.tick_icon);
+                        TextView text = (TextView) layout.findViewById(R.id.text);
+                        String successToastText="Medicine: " + name + " added.";
+                        text.setText(successToastText);
+                        Toast toast = new Toast(getApplicationContext());
+//            toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+                        toast.setDuration(Toast.LENGTH_LONG);
+                        toast.setView(layout);
+                        toast.show();
+//                        Toast.makeText(AddMedRecActivity.this, "Medicine: " + name + " added successfully.", Toast.LENGTH_SHORT).show();
                     }
 
 //                pendingIntent = PendingIntent.getService(AddMedRecActivity.this, alarm_id, mIntent, PendingIntent.FLAG_UPDATE_CURRENT);
