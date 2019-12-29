@@ -84,7 +84,7 @@ public class MedManageFragment extends Fragment {
         progressBar = view.findViewById(R.id.progressbar);
 
 
-        adapter = new MedsAdapter(medications);
+        adapter = new MedsAdapter(medications,getContext());
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         mMedListView.setLayoutManager(layoutManager);
         mMedListView.setAdapter(adapter);

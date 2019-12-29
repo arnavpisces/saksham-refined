@@ -1,11 +1,16 @@
 package com.zuccessful.trueharmony.adapters;
 
 import android.app.AlarmManager;
+import android.app.AlertDialog;
 import android.app.PendingIntent;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.annotation.NonNull;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,15 +28,19 @@ import com.zuccessful.trueharmony.utilities.Constants;
 
 import java.util.ArrayList;
 
+import static android.support.constraint.Constraints.TAG;
+
 public class MedsAdapter extends RecyclerView.Adapter<MedsAdapter.MedsViewHolder> {
     private ArrayList<Medication> mMeds;
+    private Context context;
 
     public MedsAdapter() {
         mMeds = new ArrayList<>();
     }
 
-    public MedsAdapter(ArrayList<Medication> mMeds) {
+    public MedsAdapter(ArrayList<Medication> mMeds, Context context) {
         this.mMeds = mMeds;
+        this.context=context;
     }
 
     @NonNull
@@ -99,8 +108,17 @@ public class MedsAdapter extends RecyclerView.Adapter<MedsAdapter.MedsViewHolder
 
             mDeleteIcon.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View v) {
-                    AlarmManager alarmManager = (AlarmManager)
+                public void onClick(final View v) {
+                    //Adding an alert dialog here.
+                    AlertDialog.Builder builder=new AlertDialog.Builder(context);
+                    builder.setMessage(R.string.dialog_message)
+                            .setTitle(R.string.dialog_title);
+                    
+                    builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            Log.d(TAG, "onClick: delete clicked");
+                            AlarmManager alarmManager = (AlarmManager)
                             v.getContext().getSystemService(Context.ALARM_SERVICE);
                     Intent myIntent = new Intent(v.getContext(),
                             AlarmReceiver.class);
@@ -125,6 +143,25 @@ public class MedsAdapter extends RecyclerView.Adapter<MedsAdapter.MedsViewHolder
                         }
 
                     });
+                        }
+                    });
+                    builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            Log.d(TAG, "onClick: no clicked");
+                        }
+                    });
+                    
+                    AlertDialog dialog=builder.show();
+                    TextView textView = (TextView) dialog.findViewById(android.R.id.message);
+//                    TextView textView2 = (TextView) dialog.getWindow().findViewById(android.R.id.title);
+                    Typeface customTypeface = ResourcesCompat.getFont(context,R.font.semibold);
+                    textView.setTypeface(customTypeface);
+//                    textView2.setTypeface(customTypeface);
+                    Log.d(TAG, "onClick: dialog created");
+
+//
+
                 }
             });
 
@@ -142,5 +179,6 @@ public class MedsAdapter extends RecyclerView.Adapter<MedsAdapter.MedsViewHolder
                 }
             });
         }
+
     }
 }

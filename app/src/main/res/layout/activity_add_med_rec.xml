@@ -128,7 +128,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:onClick="submitMed"
-        android:text="@string/submit_text"
+        android:fontFamily="@font/semibold"
+        android:text="@string/add_button"
         android:textColor="@android:color/white"
         android:theme="@style/MyButton" />
 
